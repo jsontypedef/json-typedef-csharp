@@ -16,14 +16,23 @@ namespace Jtd.Jtd
                 InstanceTokens = new List<string>(),
                 SchemaTokens = new List<List<string>>() { new List<string>() },
                 Errors = new List<ValidationError>(),
+                MaxErrors = MaxErrors,
             };
 
-            validate(state, schema, instance);
+            try
+            {
+                validate(state, schema, instance);
+            }
+            catch (MaxErrorsReachedException)
+            {
+                // This is a dummy error. We should swallow this, and just
+                // returned the abridged set of errors.
+            }
 
             return state.Errors;
         }
 
-        private void validate(ValidationState state, Schema schema, IJson instance, string? parentTag = null)
+        private void validate(ValidationState state, Schema schema, IJson instance, string parentTag = null)
         {
             if (schema.Nullable == true && instance.IsNull())
             {
@@ -34,6 +43,12 @@ namespace Jtd.Jtd
             {
                 case Form.Ref:
                     state.SchemaTokens.Add(new List<string>() { "definitions", schema.Ref });
+
+                    if (state.SchemaTokens.Count == MaxDepth)
+                    {
+                        throw new MaxDepthExceededException();
+                    }
+
                     validate(state, state.Root.Definitions[schema.Ref], instance);
                     state.SchemaTokens.RemoveAt(state.SchemaTokens.Count - 1);
 
@@ -323,6 +338,7 @@ namespace Jtd.Jtd
             public List<string> InstanceTokens { get; set; }
             public List<List<string>> SchemaTokens { get; set; }
             public List<ValidationError> Errors { get; set; }
+            public int MaxErrors { get; set; }
 
             public void PushInstanceToken(string token)
             {
@@ -351,6 +367,18 @@ namespace Jtd.Jtd
                     InstancePath = new List<string>(InstanceTokens),
                     SchemaPath = new List<string>(SchemaTokens[SchemaTokens.Count - 1]),
                 });
+
+                if (Errors.Count == MaxErrors)
+                {
+                    throw new MaxErrorsReachedException();
+                }
+            }
+        }
+
+        private class MaxErrorsReachedException : Exception
+        {
+            public MaxErrorsReachedException() : base()
+            {
             }
         }
     }

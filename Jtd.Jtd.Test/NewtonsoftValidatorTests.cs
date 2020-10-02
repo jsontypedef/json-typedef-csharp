@@ -37,6 +37,41 @@ namespace Jtd.Jtd.Test
             Assert.Equal(testCase.Errors, actual);
         }
 
+        [Fact]
+        public void TestMaxDepth()
+        {
+            Schema schema = new Schema {
+                Ref = "loop",
+                Definitions = new Dictionary<string, Schema>() {
+                    { "loop", new Schema { Ref = "loop" }},
+                },
+            };
+
+            Validator validator = new Validator {
+                MaxDepth = 32,
+            };
+
+            Assert.Throws<MaxDepthExceededException>(() => {
+                validator.Validate(schema, new NewtonsoftAdapter(JToken.Parse("null")));
+            });
+        }
+
+        [Fact]
+        public void TestMaxErrors()
+        {
+            Schema schema = new Schema {
+                Elements = new Schema {
+                    Type = Type.Boolean,
+                },
+            };
+
+            Validator validator = new Validator {
+                MaxErrors = 3,
+            };
+
+            Assert.Equal(3, validator.Validate(schema, new NewtonsoftAdapter(JToken.Parse("[1,1,1,1,1]"))).Count);
+        }
+
         public static IEnumerable<object[]> GetTestCases()
         {
             string input = File.ReadAllText("../../../../json-typedef-spec/tests/validation.json");
