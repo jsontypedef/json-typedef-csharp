@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eIgUsebebwkgC7wcq8qdN+wbgpzaVQ8QcXqIIkCpxaeNd7/hUsOesystjXiIf0GT26xF/rNld4pE6IwYRIRBFQ==",
+  "success": true,
+  "projectFilePath": "/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/src/Jtd.Jtd/Jtd.Jtd.csproj",
+  "expectedPackageFiles": [
+    "/Users/ulysse.carion/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512",
+    "/Users/ulysse.carion/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512"
+  ],
+  "logs": []
+}
