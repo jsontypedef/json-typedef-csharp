@@ -1,0 +1,26 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Checkout submodules
+        shell: bash
+        run: |
+          auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+          git submodule sync --recursive
+          git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1
+      - uses: actions/setup-java@v1
+        with:
+          java-version: '15'
+      - run: dotnet test
+      - run: dotnet pack --configuration Release src/Jtd.Jtd/Jtd.Jtd.csproj
+      - run: |
+          dotnet nuget push src/Jtd.Jtd/bin/Release/*.nupkg \
+            --source https://api.nuget.org/v3/index.json \
+            --api-key $NUGET_API_KEY
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
