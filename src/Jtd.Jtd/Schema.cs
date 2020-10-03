@@ -6,65 +6,166 @@ using Newtonsoft.Json;
 
 namespace Jtd.Jtd
 {
+    /// <summary>
+    /// Class <c>Schema</c> represents a JSON Type Definition schema.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// <para>
+    /// This class is designed to be usable as a serializable (and
+    /// deserializable) class for use with <see
+    /// cref="T:Newtonsoft.Json.JsonConvert" /> or <see
+    /// cref="T:System.Text.Json.JsonSerializer" />.
+    /// </para>
+    ///
+    /// <para>
+    /// The correctness of a JSON Type Definition schema cannot be expressed
+    /// entirely within CSharp's type system. To that end, consider using <see
+    /// cref="Verify" /> to ensure that a <c>Schema</c> represents a correct
+    /// JSON Type Definition schema.
+    /// </para>
+    /// </remarks>
     public class Schema
     {
+        /// <value>
+        /// Corresponds to the <c>metadata</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("metadata")]
         [JsonPropertyName("metadata")]
         public IDictionary<string, object> Metadata { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>nullable</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("nullable")]
         [JsonPropertyName("nullable")]
         public bool? Nullable { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>definitions</c> keyword in JSON Type
+        /// Definition.
+        /// </value>
         [JsonProperty("definitions")]
         [JsonPropertyName("definitions")]
         public IDictionary<string, Schema> Definitions { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>ref</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("ref")]
         [JsonPropertyName("ref")]
         public string Ref { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>type</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("type")]
         [JsonPropertyName("type")]
         public Type? Type { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>enum</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("enum")]
         [JsonPropertyName("enum")]
         public ISet<string> Enum { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>elements</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("elements")]
         [JsonPropertyName("elements")]
         public Schema Elements { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>properties</c> keyword in JSON Type
+        /// Definition.
+        /// </value>
         [JsonProperty("properties")]
         [JsonPropertyName("properties")]
         public IDictionary<string, Schema> Properties { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>optionalProperties</c> keyword in JSON Type
+        /// Definition.
+        /// </value>
         [JsonProperty("optionalProperties")]
         [JsonPropertyName("optionalProperties")]
         public IDictionary<string, Schema> OptionalProperties { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>additionalProperties</c> keyword in JSON Type
+        /// Definition.
+        /// </value>
         [JsonProperty("additionalProperties")]
         [JsonPropertyName("additionalProperties")]
         public bool? AdditionalProperties { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>values</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("values")]
         [JsonPropertyName("values")]
         public Schema Values { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>discriminator</c> keyword in JSON Type
+        /// Definition.
+        /// </value>
         [JsonProperty("discriminator")]
         [JsonPropertyName("discriminator")]
         public string Discriminator { get; set; }
 
+        /// <value>
+        /// Corresponds to the <c>mapping</c> keyword in JSON Type Definition.
+        /// </value>
         [JsonProperty("mapping")]
         [JsonPropertyName("mapping")]
         public IDictionary<string, Schema> Mapping { get; set; }
 
+        /// <summary>
+        /// Verifies that the <c>Schema</c> represents a correct JSON Type
+        /// Definition schema.
+        /// </summary>
+        ///
+        /// <remarks>
+        /// The JSON Type Definition specification has certain requirements on
+        /// correct schemas that cannot be represented in CSharp's type system,
+        /// such as requiring that all <c>ref</c> keywords have a corresponding
+        /// definition. This method will check each of these requirements.
+        /// </remarks>
+        ///
+        /// <exception cref="InvalidSchemaException">
+        /// If the schema is not correct.
+        /// </exception>
         public void Verify()
         {
             verify(this);
         }
 
+        /// <summary>
+        /// Determines the form the <c>Schema</c> takes on.
+        /// </summary>
+        ///
+        /// <remarks>
+        /// <para>
+        /// The JSON Type Definition specification requires that all schemas
+        /// take on a particular "form", which is essentially a particular
+        /// combination of keywords. This method determines which form a schema
+        /// is using.
+        /// </para>
+        ///
+        /// <para>
+        /// The return value of this method is meaningful only if the schema is,
+        /// or is a sub-schema of, a correct schema. In other words, calling
+        /// <see cref="Verify" /> on this schema's root schema must not have
+        /// raised an exception.
+        /// </para>
+        /// </remarks>
+        ///
+        /// <returns>
+        /// The form the schema takes on, assuming it is a correct schema.
+        /// </returns>
         public Form Form()
         {
             if (Ref != null)

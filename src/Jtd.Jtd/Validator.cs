@@ -4,11 +4,66 @@ using System.Globalization;
 
 namespace Jtd.Jtd
 {
+    /// <summary>
+    /// Class <c>Validator</c> implements JSON Type Definition validation.
+    /// </summary>
     public class Validator
     {
+        /// <value>
+        /// The maximum number of references that will be followed before <see
+        /// cref="Validate" /> raises <see cref="MaxDepthExceededException" />.
+        /// </value>
         public int MaxDepth { get; set; }
+
+        /// <value>
+        /// The maximum number of errors that will be be returned from <see
+        /// cref="Validate" />.
+        /// </value>
         public int MaxErrors { get; set; }
 
+        /// <summary>
+        /// Validate <paramref name="instance" /> against <paramref
+        /// name="schema" />, returning a list of validation errors.
+        /// </summary>
+        ///
+        /// <remarks>
+        /// <para>
+        /// This method implements JSON Type Definition validation. The precise
+        /// set of validation errors returned are those prescribed by the JSON
+        /// Type Definition specification. The order of the validation errors is
+        /// not meaningful.
+        /// </para>
+        ///
+        /// <para>
+        /// If <paramref name="schema" /> is not a correct schema (that is, its
+        /// <see cref="Schema.Verify" /> raises an exception), then the behavior
+        /// of this method is undefined.
+        /// </para>
+        /// </remarks>
+        ///
+        /// <param name="schema">The schema to validate against.</param>
+        ///
+        /// <param name="instance">The instance ("input") to validate.</param>
+        ///
+        /// <returns>
+        /// <para>
+        /// A list of validation errors, indicating parts of <paramref
+        /// name="instance" /> that <paramref name="schema" /> rejected. This
+        /// list will be empty if there are no validation errors.
+        /// </para>
+        ///
+        /// <para>
+        /// If <see cref="MaxErrors" /> is nonzero, then no more than <see
+        /// cref="MaxErrors" /> errors are returned. Otherwise, all errors are
+        /// returned.
+        /// </para>
+        /// </returns>
+        ///
+        /// <exception cref="MaxDepthExceededException">
+        /// If <see cref="MaxDepth" /> is nonzero, and validation runs into a
+        /// chain of <c>ref</c>s deeper than the value of <see cref="MaxDepth"
+        /// />.
+        /// </exception>
         public IList<ValidationError> Validate(Schema schema, IJson instance)
         {
             ValidationState state = new ValidationState {

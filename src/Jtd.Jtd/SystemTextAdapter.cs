@@ -3,10 +3,36 @@ using System.Text.Json;
 
 namespace Jtd.Jtd
 {
+    /// <summary>
+    /// Struct <c>SystemTextAdapter</c> implements <see cref="IJson" /> by
+    /// wrapping a <see cref="System.Text.Json.JsonElement" />.
+    /// </summary>
+    ///
+    /// <remarks>
+    /// <para>
+    /// <see cref="System.Text.Json.JsonElement" /> is System.Text.Json's
+    /// representation of arbitrary JSON data.
+    /// </para>
+    ///
+    /// <para>
+    /// You can construct an instance of <see
+    /// cref="System.Text.Json.JsonElement" /> using <see
+    /// cref="System.Text.Json.JsonDocument.Parse" /> and then taking the <see
+    /// cref="P:System.Text.Json.JsonDocument.RootElement" /> property. You can
+    /// also use <see cref="System.Text.Json.JsonSerializer.Deserialize" />.
+    /// </para>
+    /// </remarks>
+    ///
+    /// <seealso cref="Validator.Validate" />
     public struct SystemTextAdapter : IJson
     {
         private JsonElement element;
 
+        /// <summary>
+        /// Constructs a <c>SystemTextAdapter</c> around a <c>JsonElement</c>.
+        /// </summary>
+        ///
+        /// <param name="element">the element to wrap</param>
         public SystemTextAdapter(JsonElement element)
         {
             this.element = element;
