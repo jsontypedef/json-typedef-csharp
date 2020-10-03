@@ -1,12 +1,18 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Jtd.Jtd</PackageId>
+    <Version>0.1.1</Version>
+    <Description>C# / .NET implementation of JSON Type Definition</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/jsontypedef/json-typedef-csharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jsontypedef/json-typedef-csharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Authors>ucarion</Authors>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
     <PackageReference Include="System.Text.Json" Version="4.7.2" />
   </ItemGroup>
-
 </Project>
