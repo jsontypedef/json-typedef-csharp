@@ -1,9 +1,0 @@
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/bin/Debug/netstandard2.0/Jtd.Jtd.deps.json
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/bin/Debug/netstandard2.0/Jtd.Jtd.dll
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/bin/Debug/netstandard2.0/Jtd.Jtd.pdb
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/obj/Debug/netstandard2.0/Jtd.Jtd.csprojAssemblyReference.cache
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/obj/Debug/netstandard2.0/Jtd.Jtd.AssemblyInfoInputs.cache
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/obj/Debug/netstandard2.0/Jtd.Jtd.AssemblyInfo.cs
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/obj/Debug/netstandard2.0/Jtd.Jtd.csproj.CoreCompileInputs.cache
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/obj/Debug/netstandard2.0/Jtd.Jtd.dll
-/Users/ulysse.carion/dev/src/github.com/jsontypedef/json-typedef-csharp/Jtd.Jtd/obj/Debug/netstandard2.0/Jtd.Jtd.pdb
