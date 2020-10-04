@@ -20,6 +20,7 @@ jobs:
       - run: dotnet pack --configuration Release src/Jtd.Jtd/Jtd.Jtd.csproj
       - run: |
           dotnet nuget push src/Jtd.Jtd/bin/Release/*.nupkg \
+            --skip-duplicate \
             --source https://api.nuget.org/v3/index.json \
             --api-key $NUGET_API_KEY
         env:
