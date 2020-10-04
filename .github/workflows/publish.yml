@@ -24,3 +24,13 @@ jobs:
             --api-key $NUGET_API_KEY
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+      - run: |
+          wget https://github.com/dotnet/docfx/releases/download/v2.51/docfx.zip
+          unzip docfx.zip
+          mono docfx/docfx.exe docfx_project/docfx.json
+          touch docfx_project/_site/.nojekyll
+      - uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: docfx_project/_site
