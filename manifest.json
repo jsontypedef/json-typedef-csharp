@@ -1,0 +1,263 @@
+{
+  "homepages": [],
+  "source_base_path": "/home/runner/work/json-typedef-csharp/json-typedef-csharp/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.Form.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.Form.html",
+          "hash": "Cbo9rLtIeBSXWlSODeBkMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.IJson.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.IJson.html",
+          "hash": "JPQMy2p5hnHGSgQbRaW6Yw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.InvalidSchemaException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.InvalidSchemaException.html",
+          "hash": "G8IP5OVKuRwbFYB6CgniAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.MaxDepthExceededException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.MaxDepthExceededException.html",
+          "hash": "mh2A0nZgNp3w7GUBpW+nfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.NewtonsoftAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.NewtonsoftAdapter.html",
+          "hash": "/pC45S5heB3IKhm4+L5JkA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.Schema.html",
+          "hash": "z+eELlhVZ7RfsaRHVJlBEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.SystemTextAdapter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.SystemTextAdapter.html",
+          "hash": "bgeIcsheDKBOrd4GZdciYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.Type.html",
+          "hash": "/oAyXk+CUCEZsrlZ+JhEXQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.TypeJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.TypeJsonConverter.html",
+          "hash": "+KrOYlMHkD5Kjay3Fe8g0Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.ValidationError.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.ValidationError.html",
+          "hash": "VBHJr43JZqSArQcWZgWmhg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.Validator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.Validator.html",
+          "hash": "zCL2hyq4O+9kOCkPUPOqUQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Jtd.Jtd.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Jtd.Jtd.html",
+          "hash": "5crGucGTcQwI8gi3elvtgA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "DfdawBTCoBu+MDu4oBt1xA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "qhZp5wkH4gwy9KhbQGW/Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "gB8AESyvNru97tzIZofEEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "9laIbyBemnqOF8PzWjDzUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "yoOCGnQ4CAAJkjbJXZX1bA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 12,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

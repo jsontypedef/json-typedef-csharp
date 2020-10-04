@@ -1,0 +1,689 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Schema
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Schema
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Jtd.Jtd.Schema">
+  
+  
+  <h1 id="Jtd_Jtd_Schema" data-uid="Jtd.Jtd.Schema" class="text-break">Class Schema
+  </h1>
+  <div class="markdown level0 summary"><p>Class <code>Schema</code> represents a JSON Type Definition schema.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Schema</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Jtd.Jtd.html">Jtd.Jtd</a></h6>
+  <h6><strong>Assembly</strong>: Jtd.Jtd.dll</h6>
+  <h5 id="Jtd_Jtd_Schema_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Schema</code></pre>
+  </div>
+  <h5 id="Jtd_Jtd_Schema_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+This class is designed to be usable as a serializable (and
+deserializable) class for use with <span class="xref">Newtonsoft.Json.JsonConvert</span> or <span class="xref">System.Text.Json.JsonSerializer</span>.
+</p>
+<p>
+The correctness of a JSON Type Definition schema cannot be expressed
+entirely within CSharp&apos;s type system. To that end, consider using <a class="xref" href="Jtd.Jtd.Schema.html#Jtd_Jtd_Schema_Verify">Verify()</a> to ensure that a <code>Schema</code> represents a correct
+JSON Type Definition schema.
+</p>
+</div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_AdditionalProperties.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.AdditionalProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L100">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_AdditionalProperties_" data-uid="Jtd.Jtd.Schema.AdditionalProperties*"></a>
+  <h4 id="Jtd_Jtd_Schema_AdditionalProperties" data-uid="Jtd.Jtd.Schema.AdditionalProperties">AdditionalProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;additionalProperties&quot;)]
+[JsonPropertyName(&quot;additionalProperties&quot;)]
+public bool? AdditionalProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>Corresponds to the <code>additionalProperties</code> keyword in JSON Type
+Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Definitions.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Definitions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L48">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Definitions_" data-uid="Jtd.Jtd.Schema.Definitions*"></a>
+  <h4 id="Jtd_Jtd_Schema_Definitions" data-uid="Jtd.Jtd.Schema.Definitions">Definitions</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;definitions&quot;)]
+[JsonPropertyName(&quot;definitions&quot;)]
+public IDictionary&lt;string, Schema&gt; Definitions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><p>Corresponds to the <code>definitions</code> keyword in JSON Type
+Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Discriminator.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Discriminator%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L115">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Discriminator_" data-uid="Jtd.Jtd.Schema.Discriminator*"></a>
+  <h4 id="Jtd_Jtd_Schema_Discriminator" data-uid="Jtd.Jtd.Schema.Discriminator">Discriminator</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;discriminator&quot;)]
+[JsonPropertyName(&quot;discriminator&quot;)]
+public string Discriminator { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Corresponds to the <code>discriminator</code> keyword in JSON Type
+Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Elements.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Elements%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L76">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Elements_" data-uid="Jtd.Jtd.Schema.Elements*"></a>
+  <h4 id="Jtd_Jtd_Schema_Elements" data-uid="Jtd.Jtd.Schema.Elements">Elements</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;elements&quot;)]
+[JsonPropertyName(&quot;elements&quot;)]
+public Schema Elements { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Jtd.Jtd.Schema.html">Schema</a></td>
+        <td><p>Corresponds to the <code>elements</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Enum.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Enum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L69">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Enum_" data-uid="Jtd.Jtd.Schema.Enum*"></a>
+  <h4 id="Jtd_Jtd_Schema_Enum" data-uid="Jtd.Jtd.Schema.Enum">Enum</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;enum&quot;)]
+[JsonPropertyName(&quot;enum&quot;)]
+public ISet&lt;string&gt; Enum { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><p>Corresponds to the <code>enum</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Mapping.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Mapping%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L122">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Mapping_" data-uid="Jtd.Jtd.Schema.Mapping*"></a>
+  <h4 id="Jtd_Jtd_Schema_Mapping" data-uid="Jtd.Jtd.Schema.Mapping">Mapping</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;mapping&quot;)]
+[JsonPropertyName(&quot;mapping&quot;)]
+public IDictionary&lt;string, Schema&gt; Mapping { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><p>Corresponds to the <code>mapping</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Metadata.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Metadata%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L33">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Metadata_" data-uid="Jtd.Jtd.Schema.Metadata*"></a>
+  <h4 id="Jtd_Jtd_Schema_Metadata" data-uid="Jtd.Jtd.Schema.Metadata">Metadata</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;metadata&quot;)]
+[JsonPropertyName(&quot;metadata&quot;)]
+public IDictionary&lt;string, object&gt; Metadata { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><p>Corresponds to the <code>metadata</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Nullable.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Nullable%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L40">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Nullable_" data-uid="Jtd.Jtd.Schema.Nullable*"></a>
+  <h4 id="Jtd_Jtd_Schema_Nullable" data-uid="Jtd.Jtd.Schema.Nullable">Nullable</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;nullable&quot;)]
+[JsonPropertyName(&quot;nullable&quot;)]
+public bool? Nullable { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>Corresponds to the <code>nullable</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_OptionalProperties.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.OptionalProperties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L92">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_OptionalProperties_" data-uid="Jtd.Jtd.Schema.OptionalProperties*"></a>
+  <h4 id="Jtd_Jtd_Schema_OptionalProperties" data-uid="Jtd.Jtd.Schema.OptionalProperties">OptionalProperties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;optionalProperties&quot;)]
+[JsonPropertyName(&quot;optionalProperties&quot;)]
+public IDictionary&lt;string, Schema&gt; OptionalProperties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><p>Corresponds to the <code>optionalProperties</code> keyword in JSON Type
+Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Properties.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Properties%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L84">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Properties_" data-uid="Jtd.Jtd.Schema.Properties*"></a>
+  <h4 id="Jtd_Jtd_Schema_Properties" data-uid="Jtd.Jtd.Schema.Properties">Properties</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;properties&quot;)]
+[JsonPropertyName(&quot;properties&quot;)]
+public IDictionary&lt;string, Schema&gt; Properties { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><p>Corresponds to the <code>properties</code> keyword in JSON Type
+Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Ref.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Ref%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L55">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Ref_" data-uid="Jtd.Jtd.Schema.Ref*"></a>
+  <h4 id="Jtd_Jtd_Schema_Ref" data-uid="Jtd.Jtd.Schema.Ref">Ref</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ref&quot;)]
+[JsonPropertyName(&quot;ref&quot;)]
+public string Ref { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>Corresponds to the <code>ref</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Type.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Type%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L62">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Type_" data-uid="Jtd.Jtd.Schema.Type*"></a>
+  <h4 id="Jtd_Jtd_Schema_Type" data-uid="Jtd.Jtd.Schema.Type">Type</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
+[JsonPropertyName(&quot;type&quot;)]
+public Type? Type { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<a class="xref" href="Jtd.Jtd.Type.html">Type</a>&gt;</td>
+        <td><p>Corresponds to the <code>type</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Values.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Values%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L107">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Values_" data-uid="Jtd.Jtd.Schema.Values*"></a>
+  <h4 id="Jtd_Jtd_Schema_Values" data-uid="Jtd.Jtd.Schema.Values">Values</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;values&quot;)]
+[JsonPropertyName(&quot;values&quot;)]
+public Schema Values { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Jtd.Jtd.Schema.html">Schema</a></td>
+        <td><p>Corresponds to the <code>values</code> keyword in JSON Type Definition.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Form.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Form%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L169">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Form_" data-uid="Jtd.Jtd.Schema.Form*"></a>
+  <h4 id="Jtd_Jtd_Schema_Form" data-uid="Jtd.Jtd.Schema.Form">Form()</h4>
+  <div class="markdown level1 summary"><p>Determines the form the <code>Schema</code> takes on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Form Form()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Jtd.Jtd.Form.html">Form</a></td>
+        <td><p>The form the schema takes on, assuming it is a correct schema.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Jtd_Jtd_Schema_Form_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+The JSON Type Definition specification requires that all schemas
+take on a particular &quot;form&quot;, which is essentially a particular
+combination of keywords. This method determines which form a schema
+is using.
+</p>
+<p>
+The return value of this method is meaningful only if the schema is,
+or is a sub-schema of, a correct schema. In other words, calling
+<a class="xref" href="Jtd.Jtd.Schema.html#Jtd_Jtd_Schema_Verify">Verify()</a> on this schema&apos;s root schema must not have
+raised an exception.
+</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema_Verify.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema.Verify%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L141">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_Schema_Verify_" data-uid="Jtd.Jtd.Schema.Verify*"></a>
+  <h4 id="Jtd_Jtd_Schema_Verify" data-uid="Jtd.Jtd.Schema.Verify">Verify()</h4>
+  <div class="markdown level1 summary"><p>Verifies that the <code>Schema</code> represents a correct JSON Type
+Definition schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Verify()</code></pre>
+  </div>
+  <h5 id="Jtd_Jtd_Schema_Verify_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The JSON Type Definition specification has certain requirements on
+correct schemas that cannot be represented in CSharp's type system,
+such as requiring that all <code>ref</code> keywords have a corresponding
+definition. This method will check each of these requirements.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Jtd.Jtd.InvalidSchemaException.html">InvalidSchemaException</a></td>
+        <td><p>If the schema is not correct.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_Schema.md&amp;value=---%0Auid%3A%20Jtd.Jtd.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/Schema.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

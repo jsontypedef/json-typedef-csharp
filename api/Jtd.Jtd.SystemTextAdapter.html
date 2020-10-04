@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct SystemTextAdapter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct SystemTextAdapter
+   ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Jtd.Jtd.SystemTextAdapter">
+  
+  
+  <h1 id="Jtd_Jtd_SystemTextAdapter" data-uid="Jtd.Jtd.SystemTextAdapter" class="text-break">Struct SystemTextAdapter
+  </h1>
+  <div class="markdown level0 summary"><p>Struct <code>SystemTextAdapter</code> implements <a class="xref" href="Jtd.Jtd.IJson.html">IJson</a> by
+wrapping a <span class="xref">System.Text.Json.JsonElement</span>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Jtd.Jtd.IJson.html">IJson</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.ValueType.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.ValueType.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Jtd.Jtd.html">Jtd.Jtd</a></h6>
+  <h6><strong>Assembly</strong>: Jtd.Jtd.dll</h6>
+  <h5 id="Jtd_Jtd_SystemTextAdapter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct SystemTextAdapter : IJson</code></pre>
+  </div>
+  <h5 id="Jtd_Jtd_SystemTextAdapter_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+<span class="xref">System.Text.Json.JsonElement</span> is System.Text.Json&apos;s
+representation of arbitrary JSON data.
+</p>
+<p>
+You can construct an instance of <span class="xref">System.Text.Json.JsonElement</span> using <span class="xref">System.Text.Json.JsonDocument.Parse(System.ReadOnlyMemory{System.Byte},System.Text.Json.JsonDocumentOptions)</span> and then taking the <span class="xref">System.Text.Json.JsonDocument.RootElement</span> property. You can
+also use <span class="xref">System.Text.Json.JsonSerializer.Deserialize(System.String,System.Type,System.Text.Json.JsonSerializerOptions)</span>.
+</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter__ctor_System_Text_Json_JsonElement_.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.%23ctor(System.Text.Json.JsonElement)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L36">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter__ctor_" data-uid="Jtd.Jtd.SystemTextAdapter.#ctor*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter__ctor_System_Text_Json_JsonElement_" data-uid="Jtd.Jtd.SystemTextAdapter.#ctor(System.Text.Json.JsonElement)">SystemTextAdapter(JsonElement)</h4>
+  <div class="markdown level1 summary"><p>Constructs a <code>SystemTextAdapter</code> around a <code>JsonElement</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SystemTextAdapter(JsonElement element)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Text.Json.JsonElement</span></td>
+        <td><span class="parametername">element</span></td>
+        <td><p>the element to wrap</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_AsArray.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.AsArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L87">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_AsArray_" data-uid="Jtd.Jtd.SystemTextAdapter.AsArray*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_AsArray" data-uid="Jtd.Jtd.SystemTextAdapter.AsArray">AsArray()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;IJson&gt; AsArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Jtd.Jtd.IJson.html">IJson</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_AsBoolean.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.AsBoolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L72">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_AsBoolean_" data-uid="Jtd.Jtd.SystemTextAdapter.AsBoolean*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_AsBoolean" data-uid="Jtd.Jtd.SystemTextAdapter.AsBoolean">AsBoolean()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AsBoolean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_AsNumber.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.AsNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L77">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_AsNumber_" data-uid="Jtd.Jtd.SystemTextAdapter.AsNumber*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_AsNumber" data-uid="Jtd.Jtd.SystemTextAdapter.AsNumber">AsNumber()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double AsNumber()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_AsObject.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.AsObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L98">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_AsObject_" data-uid="Jtd.Jtd.SystemTextAdapter.AsObject*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_AsObject" data-uid="Jtd.Jtd.SystemTextAdapter.AsObject">AsObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, IJson&gt; AsObject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.IJson.html">IJson</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_AsString.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.AsString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L82">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_AsString_" data-uid="Jtd.Jtd.SystemTextAdapter.AsString*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_AsString" data-uid="Jtd.Jtd.SystemTextAdapter.AsString">AsString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AsString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_IsArray.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.IsArray%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L62">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_IsArray_" data-uid="Jtd.Jtd.SystemTextAdapter.IsArray*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_IsArray" data-uid="Jtd.Jtd.SystemTextAdapter.IsArray">IsArray()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsArray()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_IsBoolean.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.IsBoolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L46">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_IsBoolean_" data-uid="Jtd.Jtd.SystemTextAdapter.IsBoolean*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_IsBoolean" data-uid="Jtd.Jtd.SystemTextAdapter.IsBoolean">IsBoolean()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsBoolean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_IsNull.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.IsNull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L41">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_IsNull_" data-uid="Jtd.Jtd.SystemTextAdapter.IsNull*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_IsNull" data-uid="Jtd.Jtd.SystemTextAdapter.IsNull">IsNull()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNull()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_IsNumber.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.IsNumber%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L52">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_IsNumber_" data-uid="Jtd.Jtd.SystemTextAdapter.IsNumber*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_IsNumber" data-uid="Jtd.Jtd.SystemTextAdapter.IsNumber">IsNumber()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsNumber()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_IsObject.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.IsObject%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L67">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_IsObject_" data-uid="Jtd.Jtd.SystemTextAdapter.IsObject*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_IsObject" data-uid="Jtd.Jtd.SystemTextAdapter.IsObject">IsObject()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsObject()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter_IsString.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter.IsString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L57">View Source</a>
+  </span>
+  <a id="Jtd_Jtd_SystemTextAdapter_IsString_" data-uid="Jtd.Jtd.SystemTextAdapter.IsString*"></a>
+  <h4 id="Jtd_Jtd_SystemTextAdapter_IsString" data-uid="Jtd.Jtd.SystemTextAdapter.IsString">IsString()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Jtd.Jtd.IJson.html">IJson</a>
+  </div>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="Jtd.Jtd.Validator.html#Jtd_Jtd_Validator_Validate_Jtd_Jtd_Schema_Jtd_Jtd_IJson_">Validate(Schema, IJson)</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/jsontypedef/json-typedef-csharp/new/master/apiSpec/new?filename=Jtd_Jtd_SystemTextAdapter.md&amp;value=---%0Auid%3A%20Jtd.Jtd.SystemTextAdapter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/jsontypedef/json-typedef-csharp/blob/master/src/Jtd.Jtd/SystemTextAdapter.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
