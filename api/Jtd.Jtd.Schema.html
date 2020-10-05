@@ -81,35 +81,11 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">Schema</span></div>
   </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetHashCode()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.GetType()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.MemberwiseClone()</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
-    </div>
-    <div>
-      <span class="xref">System.Object.ToString()</span>
-    </div>
-  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Jtd.Jtd.html">Jtd.Jtd</a></h6>
   <h6><strong>Assembly</strong>: Jtd.Jtd.dll</h6>
   <h5 id="Jtd_Jtd_Schema_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class Schema</code></pre>
+    <pre><code class="lang-csharp hljs">public class Schema : object</code></pre>
   </div>
   <h5 id="Jtd_Jtd_Schema_remarks"><strong>Remarks</strong></h5>
   <div class="markdown level0 remarks"><p>
@@ -137,9 +113,7 @@ JSON Type Definition schema.
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;additionalProperties&quot;)]
-[JsonPropertyName(&quot;additionalProperties&quot;)]
-public bool? AdditionalProperties { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool? AdditionalProperties { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,9 +145,7 @@ Definition.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;definitions&quot;)]
-[JsonPropertyName(&quot;definitions&quot;)]
-public IDictionary&lt;string, Schema&gt; Definitions { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, Schema&gt; Definitions { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -185,7 +157,7 @@ public IDictionary&lt;string, Schema&gt; Definitions { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
         <td><p>Corresponds to the <code>definitions</code> keyword in JSON Type
 Definition.</p>
 </td>
@@ -205,9 +177,7 @@ Definition.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;discriminator&quot;)]
-[JsonPropertyName(&quot;discriminator&quot;)]
-public string Discriminator { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Discriminator { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,9 +209,7 @@ Definition.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;elements&quot;)]
-[JsonPropertyName(&quot;elements&quot;)]
-public Schema Elements { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Schema Elements { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -272,9 +240,7 @@ public Schema Elements { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;enum&quot;)]
-[JsonPropertyName(&quot;enum&quot;)]
-public ISet&lt;string&gt; Enum { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public ISet&lt;string&gt; Enum { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -286,7 +252,7 @@ public ISet&lt;string&gt; Enum { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.ISet</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td><span class="xref">ISet</span>&lt;<span class="xref">System.String</span>&gt;</td>
         <td><p>Corresponds to the <code>enum</code> keyword in JSON Type Definition.</p>
 </td>
       </tr>
@@ -305,9 +271,7 @@ public ISet&lt;string&gt; Enum { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;mapping&quot;)]
-[JsonPropertyName(&quot;mapping&quot;)]
-public IDictionary&lt;string, Schema&gt; Mapping { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, Schema&gt; Mapping { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -319,7 +283,7 @@ public IDictionary&lt;string, Schema&gt; Mapping { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
         <td><p>Corresponds to the <code>mapping</code> keyword in JSON Type Definition.</p>
 </td>
       </tr>
@@ -338,9 +302,7 @@ public IDictionary&lt;string, Schema&gt; Mapping { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;metadata&quot;)]
-[JsonPropertyName(&quot;metadata&quot;)]
-public IDictionary&lt;string, object&gt; Metadata { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, object&gt; Metadata { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -352,7 +314,7 @@ public IDictionary&lt;string, object&gt; Metadata { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</td>
         <td><p>Corresponds to the <code>metadata</code> keyword in JSON Type Definition.</p>
 </td>
       </tr>
@@ -371,9 +333,7 @@ public IDictionary&lt;string, object&gt; Metadata { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;nullable&quot;)]
-[JsonPropertyName(&quot;nullable&quot;)]
-public bool? Nullable { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public bool? Nullable { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -404,9 +364,7 @@ public bool? Nullable { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;optionalProperties&quot;)]
-[JsonPropertyName(&quot;optionalProperties&quot;)]
-public IDictionary&lt;string, Schema&gt; OptionalProperties { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, Schema&gt; OptionalProperties { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -418,7 +376,7 @@ public IDictionary&lt;string, Schema&gt; OptionalProperties { get; set; }</code>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
         <td><p>Corresponds to the <code>optionalProperties</code> keyword in JSON Type
 Definition.</p>
 </td>
@@ -438,9 +396,7 @@ Definition.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;properties&quot;)]
-[JsonPropertyName(&quot;properties&quot;)]
-public IDictionary&lt;string, Schema&gt; Properties { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, Schema&gt; Properties { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -452,7 +408,7 @@ public IDictionary&lt;string, Schema&gt; Properties { get; set; }</code></pre>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Collections.Generic.IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
+        <td><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="Jtd.Jtd.Schema.html">Schema</a>&gt;</td>
         <td><p>Corresponds to the <code>properties</code> keyword in JSON Type
 Definition.</p>
 </td>
@@ -472,9 +428,7 @@ Definition.</p>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;ref&quot;)]
-[JsonPropertyName(&quot;ref&quot;)]
-public string Ref { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Ref { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -505,9 +459,7 @@ public string Ref { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;type&quot;)]
-[JsonPropertyName(&quot;type&quot;)]
-public Type? Type { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Type? Type { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -538,9 +490,7 @@ public Type? Type { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;values&quot;)]
-[JsonPropertyName(&quot;values&quot;)]
-public Schema Values { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Schema Values { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
